@@ -74,8 +74,8 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   };
 
   const login = (password: string) => {
-    // Basic password check for the managers (hardcoded as requested for simplicity)
-    if (password === 'manager2024' || password === 'elias1722' || password === 'abdurahman777') {
+    // The requested password is '738073'
+    if (password === '738073') {
       setIsAdmin(true);
       localStorage.setItem('ethio_djib_admin', 'true');
       return true;
